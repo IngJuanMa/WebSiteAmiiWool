@@ -1,0 +1,109 @@
+/* Estilos para la sección de productos destacados */
+.featured-products {
+    text-align: center;
+    background-color: #f7e9dd; /* Fondo claro */
+    padding: 40px 15px;
+    max-width: 1200px;
+    font-family: var(--fuente-Quick);
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: var(--color-Marron);
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .section-subtitle {
+    font-size: 0.7em;
+    color: var(--color-Marron);
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .products-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .product-card {
+    background-color: #fff; /* Blanco */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    background-color: var(--color-Marron);
+    color: var(--color-Blanco);
+    font-size: 0.8em;
+    padding: 10px;
+  }
+  
+  .products-button {
+    background-color: var(--color-Rosa);
+    color: var(--color-Marron);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--color-Marron);
+  }
+  
+  .products-button:hover {
+    background-color: #e68518; /* Naranja más oscuro */
+  }
+  
+  .section-description {
+    font-size: 16px;
+    color: #51351c;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  .section-idea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  .section-idea img{
+    width: 40%;
+  }
+
+  .section-idea-text h2{
+    color: var(--color-Marron);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .section-idea-text p{
+    margin-top: 1px;
+    color: #51351c;
+  }
+
+  .section-idea-text-boton{
+    background-color: var(--color-MarronClaro);
+    color: var(--color-Blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 0.7em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

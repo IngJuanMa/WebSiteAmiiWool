@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bowlby+One&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+:root{
+--fuente-Quick:"Quicksand", serif;
+--color-Blanco:#f3e9dc;
+--color-Marron:#5e3023;
+--color-MarronClaro:#c08552;
+--color-Rosa:#dab49d;
+background: var(--color-Marron)
+}
+
+/* Normalize CSS básico */
+html {
+  line-height: 1.15; /* Ajusta el espacio entre líneas */
+  -webkit-text-size-adjust: 100%; /* Previene el ajuste del texto en Safari */
+}
+
+body {
+  margin: 0; /* Elimina el margen predeterminado del body */
+}
+
+main {
+  display: block; /* Asegura que <main> se renderice como bloque */
+}
+
+h1 {
+  font-size: 2em; /* Estilo consistente para títulos */
+  margin:0;
+}
+
+hr {
+  height: 0; /* Ajusta el estilo de líneas horizontales */
+  color: inherit;
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none; /* Mejora la accesibilidad para elementos con title */
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bold; /* Asegura un estilo consistente para texto fuerte */
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace, monospace; /* Fuente consistente para código */
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%; /* Tamaño consistente para texto pequeño */
+}
+
+img {
+  border-style: none; /* Elimina bordes de imágenes */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* Usa la misma fuente que el contenedor */
+  font-size: 100%; /* Estilo consistente */
+  margin: 0;
+}
+
+button,
+input { /* Ajusta los botones e inputs */
+  overflow: visible;
+}
+
+button,
+select { /* Corrige el estilo para botones/selects en algunos navegadores */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: button;
+}
+
+textarea {
+  overflow: auto; /* Ajusta el desbordamiento del texto */
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; /* Ajuste de espacio */
+}
+
+legend {
+  box-sizing: border-box; /* Estilo consistente para <legend> */
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; /* Ajusta el tamaño de los botones */
+}
+
+[type="search"] {
+  appearance: textfield; /* Elimina estilos adicionales */
+  outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+  appearance: button; /* Estilo consistente para uploads */
+  font: inherit;
+}
+
+details {
+  display: block; /* Asegura que <details> sea renderizado como bloque */
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}

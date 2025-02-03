@@ -1,0 +1,88 @@
+/* Estilos del footer */
+.footer {
+    background-color: var(--color-Marron);
+    color: #fff; /* Texto blanco */
+    padding: 3%;
+    text-align: center;
+    font-size: 14px;
+    font-family: var(--fuente-Quick);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #fa951d; /* Naranja al pasar el cursor */
+  }
+  
+  .footer-divider {
+    height: 50px;
+    width: 1px;
+    background-color: #fff; /* Línea divisoria */
+  }
+  
+  .footer-credits {
+    margin-top: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .footer-credits a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-credits a:hover {
+    color: #fa951d;
+  }
+  
+  .footer-section p {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    gap: 10%;
+    margin: 5px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-section i {
+    margin-right: 8px;
+  }
+
+  .face{
+    width: 30px;
+  }
+
+  .face-contac{
+    width: 20px;
+  }
+  
