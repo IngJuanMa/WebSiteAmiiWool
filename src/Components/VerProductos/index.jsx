@@ -11,7 +11,7 @@ const VerProductos = ()=>{
         {/* Producto 1 */}
         <div className="product-card">
           <img
-            src="/public/osos.jpeg" // Ruta de la imagen del producto
+            src="/osos.jpeg" // Ruta de la imagen del producto
             alt="Escandalosos"
             className="product-image"
           />
@@ -21,7 +21,7 @@ const VerProductos = ()=>{
         {/* Producto 2 */}
         <div className="product-card">
           <img
-            src="/public/tulipanes.jpeg" // Ruta de la imagen del producto
+            src="/tulipanes.jpeg" // Ruta de la imagen del producto
             alt="Tulipanes"
             className="product-image"
           />
@@ -31,7 +31,7 @@ const VerProductos = ()=>{
         {/* Producto 3 */}
         <div className="product-card">
           <img
-            src="/public/unicornio.jpeg" // Ruta de la imagen del producto
+            src="/unicornio.jpeg" // Ruta de la imagen del producto
             alt="Unicornio"
             className="product-image"
           />
@@ -47,7 +47,7 @@ const VerProductos = ()=>{
       </p>
 
       <div className="section-idea">
-        <img src="/public/dino.png"/>
+        <img src="/dino.png"/>
         <div className="section-idea-text">
           <h2>¿Tienes una idea en mente?</h2>
           <p>Nosotros la tejemos</p>

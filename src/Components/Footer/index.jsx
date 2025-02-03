@@ -9,10 +9,10 @@ function Footer() {
           <h4>Síguenos en nuestras redes sociales</h4>
           <div className="social-icons">
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="/public/icon/instagram.svg" className="face"/>
+            <img src="/icon/instagram.svg" className="face"/>
             </a>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="/public/icon/face.svg" className="face"/>
+              <img src="/icon/face.svg" className="face"/>
             </a>
           </div>
         </div>
@@ -22,7 +22,7 @@ function Footer() {
         {/* Información de contacto */}
         <div className="footer-section">
           <p>
-          <img src="/public/icon/locacion.svg" className="face-contac"/> Oporapa-Huila
+          <img src="/icon/locacion.svg" className="face-contac"/> Oporapa-Huila
           </p>
           <p>
             <img src="/public/icon/whats.svg" className="face-contac"/> +57 322 8571956
@@ -34,7 +34,7 @@ function Footer() {
       <div className="footer-credits">
         <p>Desing By: IngJuanMa</p>
         <a href="https://github.com/IngJuanMa" target="_blank" rel="noopener noreferrer">
-        <img src="/public/icon/github.svg" className="face-contac"/>
+        <img src="/icon/github.svg" className="face-contac"/>
         </a>
       </div>
     </footer>

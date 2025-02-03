@@ -7,7 +7,7 @@ const Header = () => {
         <header className="header">
         <div className="logo">
           {/* Reemplaza el texto por el logo de tu emprendimiento */}
-          <img src="/public/logo.png" alt="AmiiWool Logo" className="logo-img" />
+          <img src="/logo.png" alt="AmiiWool Logo" className="logo-img" />
         </div>
         <nav className="nav">
           <ul className="nav-list">
