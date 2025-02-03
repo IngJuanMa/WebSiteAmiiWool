@@ -1,11 +1,12 @@
+import CustomizationSection from "../../Components/Personalizacion"
 
 
 const Personalizacion =()=>{
 return(
     <>
-    <h1>Hola perritos</h1>
+    <CustomizationSection/>
     </>
-)
+);
 }
 
 export default Personalizacion;

@@ -25,7 +25,7 @@ function Footer() {
           <img src="/icon/locacion.svg" className="face-contac"/> Oporapa-Huila
           </p>
           <p>
-            <img src="/public/icon/whats.svg" className="face-contac"/> +57 322 8571956
+            <img src="/icon/whats.svg" className="face-contac"/> +57 322 8571956
           </p>
         </div>
       </div>

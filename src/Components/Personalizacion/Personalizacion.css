@@ -1,0 +1,77 @@
+/* Estilos para la sección de personalización */
+.customization-section {
+    background-color: #f7e9dd; /* Fondo claro */
+    padding: 20px 20px;
+    text-align: center;
+    font-family: var(--fuente-Quick);
+    color: var(--color-Marron);
+  }
+  
+  .customization-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  
+  .customization-description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .customization-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-label {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-input-file {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+
+  }
+  
+  .form-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .form-input-file {
+    border: none;
+    background-color: #fff;
+  }
+  
+  .form-button {
+    background-color: var(--color-MarronClaro); /* Naranja */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #e58919;
+  }
+   
+
