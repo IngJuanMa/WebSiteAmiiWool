@@ -4,26 +4,24 @@
     padding: 20px 20px;
     text-align: center;
     font-family: var(--fuente-Quick);
-    
-  }
-  
-  .section-title-products {
+}
+
+.section-title-products {
     font-size: 3em;
     color: var(--color-Marron); /* Marrón oscuro */
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 0;
-  }
-  
-  .products-grid {
+}
+
+.products-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     justify-items: center;
-  }
-  
-  .product-card {
+}
+
+.product-card {
     background-color: var(--color-Rosa);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -31,63 +29,191 @@
     text-align: center;
     width: 100%;
     height: auto;
-  }
-  
-  .producto-image {
+    cursor: pointer;
+}
+
+.producto-image {
     width: 100%;
     height: 25vh;
     object-fit: cover;
     border-bottom: 2px solid var(--color-MarronClaro); /* Línea decorativa */
-  }
-  
-  .product-info {
+}
+
+.product-info {
     padding: 5px;
     height: 100%;
     padding-bottom: 10px;
     background: var(--color-Marron);
-  }
-  
-  .product-name {
+}
+
+.product-name {
     font-size: 1.5em;
     color: var(--color-Blanco);
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 10px;
-  }
-  
-  .product-description {
+}
+
+.product-description {
     font-size: 1em;
     color: var(--color-Rosa);
     margin-bottom: 10px;
     margin-top: 3px;
-  }
-  
-  .product-price {
+}
+
+.product-price {
     font-size: 16px;
     color: #fa951d; /* Naranja */
     font-weight: bold;
-  }
+}
 
-  /* Botón de comprar */
+/* Botón de comprar */
 .buy-button {
-  background-color: #fa951d; /* Naranja */
-  color: #fff; /* Blanco */
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #fa951d; /* Naranja */
+    color: #fff; /* Blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .buy-button:hover {
-  background-color: #cf7c16; /* Naranja más oscuro */
-  transform: scale(1.05); /* Efecto de agrandamiento */
+    background-color: #cf7c16; /* Naranja más oscuro */
+    transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
 .buy-button:active {
-  transform: scale(0.95); /* Efecto de clic */
+    transform: scale(0.95); /* Efecto de clic */
 }
 
+/* Estilos para el modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Contenedor de la imagen con botón */
+.image-container {
+  position: relative;
   
+}
+
+.producto-image {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  border-bottom: 2px solid var(--color-MarronClaro);
+}
+
+/* Botón de vista previa */
+.view-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Contenido del modal */
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+/* Botón de cerrar modal */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}

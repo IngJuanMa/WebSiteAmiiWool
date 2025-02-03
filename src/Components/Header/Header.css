@@ -18,6 +18,7 @@
     /* Soporte para Safari */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     /* Sombra sutil */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .logo-img {

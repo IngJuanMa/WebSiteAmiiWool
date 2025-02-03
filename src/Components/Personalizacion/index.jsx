@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./Personalizacion.css";
 
 function CustomizationSection() {
-    const [image, setImage] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -65,8 +64,7 @@ function CustomizationSection() {
                 <label htmlFor="Direccion" className="form-label">Tu ciudad:</label>
                 <input type="text" id="Direccion" name="Direccion" placeholder="Ejemplo: Bogotá, Cali..." className="form-input" required />
 
-                <label htmlFor="imageUpload" className="form-label">Imagen de referencia (opcional):</label>
-                <input type="file" id="imageUpload" name="imageUpload" accept="image/*" className="form-input" onChange={handleImageUpload} />
+                <label htmlFor="imageUpload" className="form-label">Puedes enviar una imagen de referencia  directamente en nuestro chat.</label>
 
                 <button type="submit" className="form-button">¡Enviar mi idea por WhatsApp!</button>
             </form>
