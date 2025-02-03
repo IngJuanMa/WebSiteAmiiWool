@@ -1,8 +1,9 @@
+import ProductsSection from "../../Components/ProductsSection"
 
-const Productos =()=>{
-    return(
+const Productos = () => {
+    return (
         <>
-        <h1>Esta es la sección de productos</h1>
+            <ProductsSection />
         </>
     )
 }

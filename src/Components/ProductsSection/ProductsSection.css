@@ -1,0 +1,93 @@
+/* Estilos para la sección de productos */
+.products-section {
+    background-color: #f7e9dd; /* Fondo claro */
+    padding: 20px 20px;
+    text-align: center;
+    font-family: var(--fuente-Quick);
+    
+  }
+  
+  .section-title-products {
+    font-size: 3em;
+    color: var(--color-Marron); /* Marrón oscuro */
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  
+  .products-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-items: center;
+  }
+  
+  .product-card {
+    background-color: var(--color-Rosa);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .producto-image {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border-bottom: 2px solid var(--color-MarronClaro); /* Línea decorativa */
+  }
+  
+  .product-info {
+    padding: 5px;
+    height: 100%;
+    padding-bottom: 10px;
+    background: var(--color-Marron);
+  }
+  
+  .product-name {
+    font-size: 1.5em;
+    color: var(--color-Blanco);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .product-description {
+    font-size: 1em;
+    color: var(--color-Rosa);
+    margin-bottom: 10px;
+    margin-top: 3px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: #fa951d; /* Naranja */
+    font-weight: bold;
+  }
+
+  /* Botón de comprar */
+.buy-button {
+  background-color: #fa951d; /* Naranja */
+  color: #fff; /* Blanco */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+  background-color: #cf7c16; /* Naranja más oscuro */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.buy-button:active {
+  transform: scale(0.95); /* Efecto de clic */
+}
+
+  
