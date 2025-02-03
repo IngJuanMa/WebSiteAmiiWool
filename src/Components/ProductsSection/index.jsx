@@ -28,10 +28,24 @@ function ProductsSection() {
     },
     {
       id: 4,
-      name: "Unicornio",
-      description: "Unicornio en crochet tejido a mano con detalles únicos.",
+      name: "Conejita",
+      description: "Preciosa muñeca de conejita con overol hecha a mano crochet.",
       price: "COP 60,000",
-      image: "/Products/1.png",
+      image: "/Products/4.png",
+    },
+    {
+      id: 5,
+      name: "Conejito",
+      description: "Precioso muñeco de conejito con overol hecha a mano crochet.",
+      price: "COP 60,000",
+      image: "/Products/5.png",
+    },
+    {
+      id: 6,
+      name: "Boo Monster Inc",
+      description: "Muñeca Boo, Monster INC hecha a mano en crochet.",
+      price: "COP 60,000",
+      image: "/Products/6.png",
     }
   ];
 
@@ -41,6 +55,13 @@ function ProductsSection() {
 
   const closeModal = () => {
     setSelectedImage(null);
+  };
+
+  // Función para generar el enlace de WhatsApp con el mensaje
+  const handleBuy = (product) => {
+    const message = `¡Hola! Me gustaría comprar el producto: ${product.name} por ${product.price}.`;
+    const whatsappLink = `https://wa.me/+573142680307?text=${encodeURIComponent(message)}`; 
+    window.open(whatsappLink, "_blank");
   };
 
   return (
@@ -55,13 +76,13 @@ function ProductsSection() {
                 alt={product.name}
                 className="producto-image"
               />
-              <button className="view-button" onClick={() => openModal(product.image)}>🔍</button>
+              <button className="view-button" onClick={() => openModal(product.image)}>⛶</button>
             </div>
             <div className="product-info">
               <h3 className="product-name">{product.name}</h3>
               <p className="product-description">{product.description}</p>
               <p className="product-price">{product.price}</p>
-              <button className="buy-button">Comprar</button>
+              <button className="buy-button" onClick={() => handleBuy(product)}>Comprar</button>
             </div>
           </div>
         ))}

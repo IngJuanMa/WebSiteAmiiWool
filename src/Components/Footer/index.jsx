@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-section">
           <h4>Síguenos en nuestras redes sociales</h4>
           <div className="social-icons">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/amiiwool?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
             <img src="/icon/instagram.svg" className="face"/>
             </a>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
