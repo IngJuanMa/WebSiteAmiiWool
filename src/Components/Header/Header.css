@@ -1,28 +1,32 @@
 /* Estilos del header */
 .header {
+    width: 85%;
+    left: 2.5%;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 20px;
+    padding: 1px 20px;
     /* background-color: var(--color-MarronClaro); */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    position: sticky;
+    box-shadow: 0px 2px 4px rgba(107, 61, 61, 0.63);
+    position: fixed;
     top: 0;
     z-index: 1000;
     font-family: var(--fuente-Quick);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color:#5e3023b0;
     /* Fondo transparente con opacidad */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); 
     /* Efecto de desenfoque */
-    -webkit-backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px); */
     /* Soporte para Safari */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     /* Sombra sutil */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
 }
 
 .logo-img {
-    height: 50px;
+    height: 70px;
     /* Ajusta el tamaño del logo */
 }
 
@@ -42,14 +46,18 @@
 
 .nav-link {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     /* Blanco para contraste */
-    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #51351c;
-    /* Marrón oscuro al pasar el mouse */
+
+@media (min-width:1024px) {
+   .header{
+    width: 60%;
+    left: 20%;
+   }
+
+    
 }
