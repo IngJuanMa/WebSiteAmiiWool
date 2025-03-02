@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./ProductsSection.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { BsArrowsFullscreen } from "react-icons/bs";
-import { motion } from "framer-motion";
+import { motion,AnimatePresence } from "framer-motion";
+
 
 
 
@@ -177,14 +178,30 @@ function ProductsSection() {
         ))}
       </section>
 
-      {selectedImage && (
-        <div className="modal active" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close-modal" onClick={closeModal}>&times;</span>
-            <img src={selectedImage} alt="Producto ampliado" />
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+  {selectedImage && (
+    <motion.div
+      className="modal active"
+      onClick={closeModal}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      <motion.div
+        className="modal-content"
+        onClick={(e) => e.stopPropagation()}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.8, opacity: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <span className="close-modal" onClick={closeModal}>&times;</span>
+        <img src={selectedImage} alt="Producto ampliado" />
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
     </section>
   );
 }
