@@ -120,7 +120,7 @@ function ProductsSection() {
 
   // Función para generar el enlace de WhatsApp con el mensaje
   const handleBuy = (product) => {
-    const message = `¡Hola! Me gustaría comprar el producto: ${product.name} por ${product.price}.`;
+    const message = `¡Hola! Me gustaría comprar el producto: ${product.name}`;
     const whatsappLink = `https://wa.me/+573142680307?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, "_blank");
   };

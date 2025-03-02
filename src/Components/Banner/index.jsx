@@ -38,7 +38,7 @@ const Banner = () => {
         <section className="banner">
 
             <motion.img
-                variants={container(0.2)}
+                variants={subir(0.2)}
                 initial="hidden"
                 whileInView="show"
                 src="/logo.png" />
